@@ -1,0 +1,36 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #7159c1;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 20vh 70vh 10vh;
+}
+
+header {
+  background: yellow;
+  height: 100%;
+  grid-column: 1/3; /*shortcut para grid-column-start e end;*/
+}
+main {
+  background: blue;
+  height: 100%;
+  grid-column: 1/2;
+}
+
+aside {
+  background: green;
+  height: 100%;
+  grid-column: 2/3;
+}
+
+footer {
+  background: red;
+  height: 100%;
+  grid-column: 1/3;
+}
